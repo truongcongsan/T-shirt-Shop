@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 64px;
+  height: 64px;
+  margin: 0 54px 0 0;
+}
+.input-search {
+  float: right;
+}
+.ant-menu-overflow {
+  justify-content: flex-end;
+}
+.ant-layout-header {
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}

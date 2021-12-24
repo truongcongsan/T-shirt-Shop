@@ -1,0 +1,100 @@
+:root {
+  --red: #ff4d4f;
+  --blue: #1890ff;
+  --color-opst: rgba(0, 0, 0, 0.2);
+}
+.ant-row {
+  justify-content: center;
+}
+.ant-card-body {
+  padding: 24px 24px 5px 24px;
+}
+.ant-card-meta-detail > div:not(:last-child) {
+  margin-bottom: 100px;
+}
+.container-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px auto 20px;
+}
+.pro-title {
+  font-size: 48px;
+  margin-bottom: 0;
+}
+.container-title p {
+  font-size: 18px;
+}
+.pro-price {
+  text-decoration: line-through;
+  color: var(--red);
+  margin-top: 5px;
+}
+.pro-discount {
+  color: var(--blue);
+}
+.membrane-top,
+.membrane-bottom,
+.membrane-left,
+.membrane-right {
+  position: absolute;
+  background-color: var(--color-opst);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.membrane-top,
+.membrane-bottom {
+  height: 10%;
+  width: 100%;
+}
+.membrane-left,
+.membrane-right {
+  height: 100%;
+  width: 5%;
+}
+.membrane-top,
+.membrane-left {
+  top: 0;
+  left: 0;
+}
+.membrane-bottom,
+.membrane-right {
+  bottom: 0;
+  right: 0;
+}
+.membrane-bottom > a {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ant-card-hoverable:hover .membrane-top {
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  opacity: 1;
+}
+.ant-card-hoverable:hover .membrane-bottom {
+  bottom: 0;
+  right: 0;
+  height: 50%;
+  width: 100%;
+  opacity: 1;
+}
+.ant-card-hoverable:hover .membrane-left,
+.ant-card-hoverable:hover .membrane-right {
+  height: 100%;
+  width: 50%;
+  opacity: 1;
+}
+@media only screen and (max-width: 500px) {
+  .pro-title {
+    font-size: 28px;
+  }
+  .container-title p {
+    font-size: 14px;
+  }
+}

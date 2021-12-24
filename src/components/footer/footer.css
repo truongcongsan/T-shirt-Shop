@@ -1,0 +1,44 @@
+:root {
+  --footer-height: 80px;
+  --footer-pst-bottom: -130px;
+  --white: #fff;
+  --blue: #1890ff;
+  --width-ft: calc(100% - 128px);
+  --margin-ft: 64px;
+}
+.main-footer {
+  position: absolute;
+  bottom: var(--footer-pst-bottom);
+  height: var(--footer-height);
+  width: 100%;
+  background-color: var(--blue);
+}
+.content-ft {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  font-size: 16px;
+}
+.btn-scroll {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1;
+  cursor: pointer;
+  color: var(--blue);
+  background-color: var(--white);
+  font-size: 42px;
+  transition: all 0.5s;
+}
+.btn-scroll:hover{
+  background-color: var(--blue);
+  color: var(--white);
+}
+@media only screen and (max-width: 800px) {
+  .content-ft{
+    font-size: 12px;
+    width: 289px;
+  }
+}

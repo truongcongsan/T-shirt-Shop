@@ -1,0 +1,47 @@
+:root{
+  --white: #fff;
+  --green: #088178;
+}
+.carousel-item {
+  position: relative;
+  padding: 30px 50px;
+  margin: 64px;
+  clip-path: polygon(0 0, 65% 0, 50% 100%, 0% 100%);
+  background-color: var(--white);
+}
+.carousel-item > h4 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.carousel-item > h2 {
+  font-size: 48px;
+  margin: 0;
+}
+.carousel-item > h1 {
+  color: var(--green);
+  font-size: 48px;
+  margin: 0;
+}
+.carousel-item > p {
+  margin: 15px 0 25px;
+}
+@media only screen and (max-width: 900px) {
+  .carousel-item {
+    clip-path: polygon(0 0, 75% 0, 60% 100%, 0% 100%);
+  }
+  .carousel-item > h4 {
+    font-size: 1rem;
+  }
+  .carousel-item h2 {
+    font-size: 28px;
+  }
+  .carousel-item h1 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .carousel-item {
+    padding: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
