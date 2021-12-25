@@ -5,13 +5,14 @@ import {
     Link
 } from "react-router-dom";
 
-import { Layout, Menu } from 'antd';
+import { Layout, Menu, Badge } from 'antd';
 import { WindowsFilled, ShoppingOutlined } from '@ant-design/icons';
 
 //Layout
 const { Header } = Layout;
 
 function NavMenu() {
+    
     return (
         <>
             <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
@@ -35,11 +36,15 @@ function NavMenu() {
                     <Menu.Item key="5">
                         <Link to="/login">Login</Link>
                     </Menu.Item>
+
                     <Menu.Item key="6">
-                        <Link to="/cart">
-                        <ShoppingOutlined style={{ fontSize: "1.4rem" }}/>
-                        </Link>
+                        <Badge dot>
+                            <Link to="/cart">
+                                <ShoppingOutlined style={{ fontSize: "1.4rem" }} />
+                            </Link>
+                        </Badge>
                     </Menu.Item>
+
                 </Menu>
 
             </Header>

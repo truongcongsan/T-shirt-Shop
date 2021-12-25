@@ -23,7 +23,7 @@ function App() {
   return (
     <Router>
       <Layout>
-        <NavMenu />
+        <NavMenu/>
         <Footer />
       </Layout>
       <Routes>

@@ -76,18 +76,18 @@ function Detail({ data }) {
             //     cartArr.push(cartValue)
             // }
             // else {
-                showModal(mdAdd)
-                cartArr.push(cartValue)
-                for (let i = 0; i < cartArr.length; i++) {
-                    for (let j = i + 1; j < cartArr.length; j++) {
-                        if (cartArr[i].id == cartArr[j].id && cartArr[i].size == cartArr[j].size) {
-                            cartArr[i].quantily += cartArr[j].quantily;
-                            cartArr[i].totalC += cartArr[j].totalC;
-                            cartArr.splice(j, 1)
-                            j = i
-                        }
+            showModal(mdAdd)
+            cartArr.push(cartValue)
+            for (let i = 0; i < cartArr.length; i++) {
+                for (let j = i + 1; j < cartArr.length; j++) {
+                    if (cartArr[i].id == cartArr[j].id && cartArr[i].size == cartArr[j].size) {
+                        cartArr[i].quantily += cartArr[j].quantily;
+                        cartArr[i].totalC += cartArr[j].totalC;
+                        cartArr.splice(j, 1)
+                        j = i
                     }
                 }
+            }
             // }
             console.log(cartArr);
         }
@@ -100,7 +100,7 @@ function Detail({ data }) {
             setCartValue({
                 ...cartValue,
                 quantily: value,
-                totalC: initialPrice*value
+                totalC: initialPrice * value
             })
         }
 
@@ -168,7 +168,7 @@ function Detail({ data }) {
 
             {detailRender}
 
-            <Modal title="Thông báo" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+            <Modal title="Notification" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
                 <p>{modalContent}</p>
             </Modal>
 
