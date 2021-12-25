@@ -13,8 +13,8 @@ function Detail({ data }) {
     const [isModalVisible, setIsModalVisible] = useState(false);
 
     const [modalContent, setmodalContent] = useState('')
-    const mdSize = "Vui lòng chọn size của sản phẩm!"
-    const mdAdd = "Thêm sản phẩm vào giỏ hàng thành công!"
+    const mdSize = "Please choose the size of the product!"
+    const mdAdd = "Product added to cart successfully!"
 
     const showModal = (val) => {
         setIsModalVisible(true);

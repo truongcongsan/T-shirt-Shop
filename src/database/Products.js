@@ -78,7 +78,7 @@ const products = [
         price: 499000,
         discount: 399000,
         rate: 5,
-        category: "featured",
+        category: "old",
     },
     {
         id: 10,
@@ -87,7 +87,7 @@ const products = [
         price: 249000,
         discount: 199000,
         rate: 4.5,
-        category: "featured",
+        category: "old",
     },
     {
         id: 11,
@@ -96,7 +96,7 @@ const products = [
         price: 399000,
         discount: 299000,
         rate: 4,
-        category: "featured",
+        category: "old",
     },
     {
         id: 12,
@@ -105,7 +105,7 @@ const products = [
         price: 499000,
         discount: 399000,
         rate: 5,
-        category: "featured",
+        category: "old",
     },
     {
         id: 13,
@@ -114,7 +114,7 @@ const products = [
         price: 599000,
         discount: 449000,
         rate: 5,
-        category: "new",
+        category: "old",
     },
     {
         id: 14,
@@ -123,7 +123,7 @@ const products = [
         price: 649000,
         discount: 599000,
         rate: 4.5,
-        category: "new",
+        category: "old",
     },
     {
         id: 15,
@@ -132,7 +132,7 @@ const products = [
         price: 300000,
         discount: 299000,
         rate: 4,
-        category: "new",
+        category: "old",
     },
     {
         id: 16,
@@ -141,7 +141,7 @@ const products = [
         price: 320000,
         discount: 249000,
         rate: 5,
-        category: "new",
+        category: "old",
     },
     {
         id: 17,
@@ -150,7 +150,7 @@ const products = [
         price: 599000,
         discount: 449000,
         rate: 5,
-        category: "new",
+        category: "old",
     },
     {
         id: 18,
@@ -159,7 +159,7 @@ const products = [
         price: 649000,
         discount: 599000,
         rate: 4.5,
-        category: "new",
+        category: "old",
     },
     {
         id: 19,
@@ -168,7 +168,7 @@ const products = [
         price: 300000,
         discount: 299000,
         rate: 4,
-        category: "new",
+        category: "old",
     },
     {
         id: 20,
@@ -177,7 +177,7 @@ const products = [
         price: 320000,
         discount: 249000,
         rate: 5,
-        category: "new",
+        category: "old",
     }
 ]
 

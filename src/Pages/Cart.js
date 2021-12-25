@@ -7,11 +7,11 @@ const { Text } = Typography;
 function Cart() {
 
     const columns = [
-        {
-            title: 'Id',
-            dataIndex: 'id',
-            key: 'key',
-        },
+        // {
+        //     title: 'Id',
+        //     dataIndex: 'id',
+        //     key: 'key',
+        // },
         {
             title: 'Name',
             dataIndex: 'name',
@@ -47,7 +47,7 @@ function Cart() {
     return (
         <>
             <Row style={{ marginTop: '94px', marginBottom: '20px' }}>
-                <h1>Giỏ hàng</h1>
+                <h1>Your cart</h1>
             </Row>
             <Row >
                 <Table
@@ -57,8 +57,8 @@ function Cart() {
                     pagination={false}
                     bordered
                     scroll={{ x: 600 }}
-                    title={() => 'Giỏ hàng của bạn'}
-                    footer={() => <Button type='primary'>Đặt mua</Button>}
+                    title={() => 'Your cart'}
+                    footer={() => <Button type='primary'>Buy</Button>}
                     summary={pageData => {
                         let totalQuantily = 0;
                         let totalTotalC = 0;
@@ -71,8 +71,8 @@ function Cart() {
                         return (
                             <>
                                 <Table.Summary.Row>
-                                    <Table.Summary.Cell>Total</Table.Summary.Cell>
-                                    <Table.Summary.Cell colSpan={2}></Table.Summary.Cell>
+                                    <Table.Summary.Cell colSpan={2}>Total</Table.Summary.Cell>
+                                    {/* <Table.Summary.Cell ></Table.Summary.Cell> */}
                                     <Table.Summary.Cell>
                                         <Text type="danger">{totalQuantily}</Text>
                                     </Table.Summary.Cell>
