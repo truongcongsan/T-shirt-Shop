@@ -9,8 +9,8 @@ import Contact from './Pages/Contact';
 import Cart from './Pages/Cart';
 import Shop from './Pages/Shop';
 import About from './Pages/About';
-import Login from './Pages/Login';
-import Register from './Pages/Register';
+import Login from './Pages/login/Login';
+import Register from './Pages/login/Register';
 import ErrorPage from './Pages/ErrorPage';
 import NavMenu from './components/nav/NavMenu';
 import Detail from './Pages/detail/Detail';
@@ -31,6 +31,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/shop" element={<Shop data={data} />} />
         <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register />} />

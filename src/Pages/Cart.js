@@ -47,7 +47,7 @@ function Cart() {
     return (
         <>
             <Row style={{ marginTop: '94px', marginBottom: '20px' }}>
-                <h1>Your cart</h1>
+                <h1 style={{fontSize: '42px'}}>Your cart</h1>
             </Row>
             <Row >
                 <Table
