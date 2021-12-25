@@ -4,7 +4,7 @@ import { Form, Input, Button, Checkbox, Row, Col } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 
-const NormalLoginForm = () => {
+const NormalRegisterForm = () => {
     const onFinish = (values) => {
         console.log('Received values of form: ', values);
     };
@@ -86,7 +86,7 @@ function Register() {
             </Row>
             <Row>
                 <Col style={{ minWidth: '300px', minHeight: '340px' }}>
-                    <NormalLoginForm />
+                    <NormalRegisterForm />
                 </Col>
             </Row>
         </>
