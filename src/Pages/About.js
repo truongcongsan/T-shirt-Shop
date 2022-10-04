@@ -1,4 +1,4 @@
-import { GithubOutlined, FacebookFilled, TwitterOutlined, YoutubeFilled } from '@ant-design/icons/lib/icons'
+import { GithubOutlined, FacebookFilled, InstagramFilled , YoutubeFilled } from '@ant-design/icons/lib/icons'
 import { Col, Image, Row, Tooltip } from 'antd'
 import React from 'react'
 
@@ -39,16 +39,16 @@ function About() {
                     <div>
                         <span>Fllow me: </span>
                         <Tooltip title="Github" color={'#000'} key={'#000'}>
-                            <a href='#'><GithubOutlined style={{ color: '#000', fontSize: '30px', margin: '10px' }} /></a>
+                            <a href='https://github.com/truongcongsan/T-shirt-Shop'><GithubOutlined style={{ color: '#000', fontSize: '30px', margin: '10px' }} /></a>
                         </Tooltip>
                         <Tooltip title="Facebook" color={'#4267b2'} key={'#4267b2'}>
-                            <a href='#'><FacebookFilled style={{ color: '#4267b2', fontSize: '30px', margin: '10px' }} /></a>
+                            <a href='https://www.facebook.com/profile.php?id=100018505067961'><FacebookFilled style={{ color: '#4267b2', fontSize: '30px', margin: '10px' }} /></a>
                         </Tooltip>
                         <Tooltip title="Twitter" color={'#1DA1F2'} key={'#1DA1F2'}>
-                            <a href='#'><TwitterOutlined style={{ color: '#1DA1F2', fontSize: '30px', margin: '10px' }} /></a>
+                            <a href='https://www.instagram.com/t_rexcongsan/'><InstagramFilled style={{ color: '#FBAD50', fontSize: '30px', margin: '10px' }} /></a>
                         </Tooltip>
-                        <Tooltip title="Youtobe" color={'#EA4335'} key={'#EA4335'}>
-                            <a href='#'><YoutubeFilled style={{ color: '#EA4335', fontSize: '30px', margin: '10px' }} /></a>
+                        <Tooltip title="Youtube" color={'#EA4335'} key={'#EA4335'}>
+                            <a href='https://www.youtube.com/channel/UCQrgR7_4p3oDwjvJSb2yXCw'><YoutubeFilled style={{ color: '#EA4335', fontSize: '30px', margin: '10px' }} /></a>
                         </Tooltip>
                     </div>
                 </Col>
